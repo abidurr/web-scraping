@@ -7,7 +7,7 @@ request("https://write.as/matt", (error, response, html) => {
       // const siteHeading = $(".post-title");
       // console.log(siteHeading.text())
       $(".post-title").each((i, el) => {
-          const item = $(el).text();
+          const item = $(el).text().replace(/\s\s+/g, "");
           console.log(item);
       })
   }
