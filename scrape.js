@@ -17,6 +17,7 @@ request("https://write.as/matt", (error, response, html) => {
           // Write to CSV file
           writeStrean.write(`${item}\n`);
       });
-      console.log("Scraped into file")
+      console.log("Scraped into file!")
   }
 });
+ // run "node scrape" in terminal
